@@ -1,21 +1,59 @@
 questions = [
+    #1
     {
-    "question": "Quando você está em uma festa, você normalmente:",
+    "question": "Sobre a sua personalidade, qual dessas características se parecem mais com você?",
     "answers": [
-        ("Conta histórias e faz todos rirem.", "Bobo da corte"),
-        ("Cuida para que todos se sintam bem-vindos.", "Cuidador"),
-        ("Observa e analisa o comportamento das pessoas.", "Sábio"),
-        ("Está no centro dos holofotes.", "Amante"),
-        ("Garante que tudo esteja ocorrendo conforme planejado.", "Governante"),
-        ("Conversa sobre ideias inovadoras.", "Mago"),
-        ("Evita chamar atenção e prefere observar.", "Cara comum"),
-        ("Explora diferentes grupos para conhecer novas pessoas.", "Explorador"),
-        ("Discute temas profundos e filosóficos com interessados.", "Herói"),
-        ("Propõe jogos ou atividades divertidas.", "Criador"),
-        ("Questiona as normas sociais ou a organização da festa.", "Rebelde"),
-        ("Mantém uma atitude otimista e pacífica.", "Inocente")
+        ("Questionador e desafiador.", "Rebelde"),
+        ("Inovador e transformador.", "Mago"),
+        ("Corajoso e assertivo.", "Herói"),
+        ("Acolhedor e compassivo.", "Cuidador"),
+        ("Criativo e original.", "Criador"),
+        ("Líder e autoritário.", "Governante"),
+        ("Apaixonado e empático.", "Amante"),
+        ("Engraçado e extrovertido.", "Bobo da corte"),
+        ("Confiável e realista.", "Cara comum"),
+        ("Otimista e puro.", "Inocente"),
+        ("Aventureiro e curioso.", "Explorador"),
+        ("Sábio e reflexivo.", "Sábio")
     ]
     },
+    #2
+    {
+    "question": "O que você mais valoriza na vida?",
+    "answers": [
+        ("Independência e a capacidade de fazer mudanças.", "Rebelde"),
+        ("Inovação e a descoberta de novas possibilidades.", "Mago"),
+        ("Coragem e a oportunidade de fazer a diferença.", "Herói"),
+        ("Relacionamentos e o bem-estar dos outros.", "Cuidador"),
+        ("Expressão criativa e autenticidade.", "Criador"),
+        ("Controle e liderança eficaz.", "Governante"),
+        ("Relacionamentos íntimos e conexões profundas.", "Amante"),
+        ("Alegria, diversão e não levar a vida tão a sério.", "Bobo da corte"),
+        ("Simplicidade, comunidade e pertencimento.", "Cara comum"),
+        ("Felicidade, otimismo e viver uma vida sem culpa.", "Inocente"),
+        ("Aventura e novas experiências.", "Explorador"),
+        ("Conhecimento, sabedoria e verdade.", "Sábio")
+    ]
+    },
+    #3
+    {
+    "question": "Seu lugar favorito tem quais características?",
+    "answers": [
+        ("Um lugar onde posso ser eu mesmo, sem regras ou restrições.", "Rebelde"),
+        ("Um espaço criativo e inspirador, cheio de mistérios e possibilidades.", "Mago"),
+        ("Um ambiente desafiador e emocionante, onde posso testar minhas habilidades.", "Herói"),
+        ("Um ambiente acolhedor e confortável, onde posso cuidar e ser cuidado.", "Cuidador"),
+        ("Um espaço artístico e original, que estimula a expressão e a inovação.", "Criador"),
+        ("Um local imponente e bem organizado, que reflete status e controle.", "Governante"),
+        ("Um ambiente romântico e belo, que favorece conexões íntimas.", "Amante"),
+        ("Um lugar divertido e cheio de vida, onde a diversão nunca acaba.", "Bobo da corte"),
+        ("Um local familiar e acolhedor, onde me sinto parte de uma comunidade.", "Cara comum"),
+        ("Um espaço seguro e tranquilo, onde posso ser feliz e livre de preocupações.", "Inocente"),
+        ("Um ambiente repleto de aventura e descobertas, sempre diferente e estimulante.", "Explorador"),
+        ("Um local calmo e repleto de conhecimento, ideal para aprendizado e reflexão.", "Sábio")
+    ]
+    },
+    #4
     {
     "question": "Qual valor você mais aprecia no local de trabalho?",
     "answers": [
@@ -33,23 +71,25 @@ questions = [
         ("Transformação e mudança positiva.", "Mago")
     ]
     },
+    #5
     {
-    "question": "Como você prefere passar o seu tempo livre?",
+    "question": "Você tem um dom, qual dessas opções abaixo mais diz sobre você?",
     "answers": [
-        ("Lendo sobre novas descobertas e conhecimentos.", "Sábio"),
-        ("Criando arte ou trabalhando em projetos pessoais.", "Criador"),
-        ("Ajudando amigos ou familiares.", "Cuidador"),
-        ("Planejando sua próxima grande aventura.", "Explorador"),
-        ("Lutando por uma causa em que acredita.", "Rebelde"),
-        ("Procurando estar com seu amor ou amigos próximos.", "Amante"),
-        ("Fazendo algo produtivo ou liderando um projeto.", "Governante"),
-        ("Relaxando em casa, desfrutando da simplicidade.", "Inocente"),
-        ("Participando de esportes ou atividades que desafiam.", "Herói"),
-        ("Trazendo alegria para as pessoas com piadas ou histórias engraçadas.", "Bobo da corte"),
-        ("Experimentando coisas novas e pouco convencionais.", "Mago"),
-        ("Mantendo uma rotina confortável e conhecida.", "Cara comum")
+        ("Capacidade de questionar e mudar o que muitos aceitam como certo.", "Rebelde"),
+        ("Habilidade de enxergar e criar soluções onde outros veem problemas.", "Mago"),
+        ("Força para enfrentar desafios e proteger os outros.", "Herói"),
+        ("Empatia para entender e cuidar profundamente das necessidades alheias.", "Cuidador"),
+        ("Criatividade para manifestar ideias e trazer novidade ao mundo.", "Criador"),
+        ("Liderança para dirigir e inspirar pessoas em direção a um objetivo comum.", "Governante"),
+        ("Capacidade de criar e manter conexões profundas e significativas.", "Amante"),
+        ("Alegria contagiante e habilidade para ver o lado positivo da vida.", "Bobo da corte"),
+        ("Honestidade e autenticidade que inspiram confiança e respeito.", "Cara comum"),
+        ("Visão otimista e pura que traz esperança para os ambientes.", "Inocente"),
+        ("Curiosidade insaciável e desejo de explorar o desconhecido.", "Explorador"),
+        ("Sabedoria profunda e a capacidade de compartilhar conhecimento de forma clara e útil.", "Sábio")
     ]
     },
+    #6
     {
     "question": "Qual aspecto da vida você acha mais importante?",
     "answers": [
@@ -67,40 +107,25 @@ questions = [
         ("Inovação e mudança.", "Mago")
     ]
     },
+    #7
     {
-    "question": "Quando toma decisões importantes, você se baseia principalmente em:",
+    "question": "Seu maior defeito é?",
     "answers": [
-        ("Fatos e dados concretos.", "Sábio"),
-        ("Emoções e sentimentos.", "Amante"),
-        ("Experiências passadas.", "Cara comum"),
-        ("Conselhos e necessidades dos outros.", "Cuidador"),
-        ("Potencial de inovação e mudança.", "Mago"),
-        ("Princípios e valores pessoais.", "Inocente"),
-        ("Estratégias para maximizar o controle e influência.", "Governante"),
-        ("Possíveis impactos sociais e éticos.", "Rebelde"),
-        ("Oportunidades para diversão e aventura.", "Bobo da corte"),
-        ("Desafios e a chance de provar a si mesmo.", "Herói"),
-        ("O desejo de explorar e experimentar algo novo.", "Explorador"),
-        ("A necessidade de expressar sua identidade criativa.", "Criador")
+        ("Tendência a desafiar autoridades e regras a ponto de causar conflitos desnecessários.", "Rebelde"),
+        ("Às vezes posso ser muito idealista, perdendo o contato com a realidade prática.", "Mago"),
+        ("Posso ser excessivamente competitivo ou tentar fazer tudo sozinho.", "Herói"),
+        ("Frequentemente me coloco em segundo plano, cuidando dos outros às custas de mim mesmo.", "Cuidador"),
+        ("Meu desejo por perfeição e originalidade pode me levar à procrastinação.", "Criador"),
+        ("Meu controle pode se tornar dominador e autoritário.", "Governante"),
+        ("Tendo a me envolver emocionalmente demais e posso ser muito carente.", "Amante"),
+        ("Meu constante desejo de entretenimento pode me fazer parecer irresponsável ou pouco sério.", "Bobo da corte"),
+        ("Minha preferência pela conformidade e aversão ao risco pode me impedir de inovar ou aceitar mudanças.", "Cara comum"),
+        ("Meu otimismo pode me tornar ingênuo e vulnerável a ser enganado ou explorado.", "Inocente"),
+        ("Minha constante busca por novidade pode me levar a ser inconstante e descompromissado.", "Explorador"),
+        ("Posso ser excessivamente crítico ou distante, focando mais em ideias do que em pessoas.", "Sábio")
     ]
     },
-    {
-    "question": "Qual é o seu maior medo?",
-    "answers": [
-        ("Estagnação e não alcançar seu potencial.", "Mago"),
-        ("Solidão e não ser amado.", "Amante"),
-        ("Desordem e caos.", "Governante"),
-        ("Injustiça e desigualdade.", "Rebelde"),
-        ("Ignorância e desinformação.", "Sábio"),
-        ("Conflito e discórdia.", "Cuidador"),
-        ("Não ser autêntico ou verdadeiro consigo mesmo.", "Inocente"),
-        ("Ser esquecido ou irrelevante.", "Bobo da corte"),
-        ("Falhar em proteger ou ajudar quem precisa.", "Herói"),
-        ("Perder a liberdade para viajar ou explorar.", "Explorador"),
-        ("Não ser capaz de criar ou inovar.", "Criador"),
-        ("Ser visto como comum ou igual aos outros.", "Cara comum")
-    ]
-    },
+    #8
     {
     "question": "Quando você pensa em um líder ideal, você imagina alguém que:",
     "answers": [
@@ -118,23 +143,7 @@ questions = [
         ("Seja confiável e consistente.", "Cara comum")
     ]
     },
-    {
-    "question": "Como você gosta de resolver conflitos?",
-    "answers": [
-        ("Mediando e cuidando das emoções envolvidas.", "Cuidador"),
-        ("Com humor e leveza para aliviar a tensão.", "Bobo da corte"),
-        ("Com debates e discussões para explorar todas as perspectivas.", "Sábio"),
-        ("Tomando decisões firmes e claras para restaurar a ordem.", "Governante"),
-        ("Procurando soluções inovadoras e fora do comum.", "Mago"),
-        ("Focando em manter a paz e a felicidade.", "Inocente"),
-        ("Enfrentando o problema de frente, com coragem.", "Herói"),
-        ("Encorajando a expressão individual e criativa das partes.", "Criador"),
-        ("Proporcionando um ambiente amoroso e empático.", "Amante"),
-        ("Lutando por justiça e mudança.", "Rebelde"),
-        ("Buscando novos ambientes ou contextos para evitar conflitos.", "Explorador"),
-        ("Mantendo-se neutro e buscando o consenso.", "Cara comum")
-    ]
-    },
+    #9
     {
     "question": "O que te inspira a ser uma pessoa melhor?",
     "answers": [
@@ -152,6 +161,7 @@ questions = [
         ("A preferência por uma vida estável e previsível.", "Cara comum")
     ]
     },
+    #10
     {
     "question": "Como você define 'felicidade'?",
     "answers": [
@@ -169,123 +179,58 @@ questions = [
         ("Manter uma vida cotidiana tranquila e confortável.", "Cara comum")
     ]
     },
+    #11
     {
-    "question": "Qual é a sua abordagem quando se trata de aprender algo novo?",
+    "question": "O lema que mais combina com você é",
     "answers": [
-        ("Eu gosto de mergulhar de cabeça, buscando aventuras e experiências práticas.", "Explorador"),
-        ("Prefiro aprender de forma estruturada e sistemática, com muita pesquisa.", "Sábio"),
-        ("Aprendo fazendo e aplicando o conhecimento em projetos criativos.", "Criador"),
-        ("Aprendo melhor em um ambiente de grupo, ajudando e sendo ajudado.", "Cuidador"),
-        ("Busco inspiração na arte e na beleza, aprendendo de forma intuitiva.", "Amante"),
-        ("Gosto de aprender com humor e leveza, tornando o processo divertido.", "Bobo da corte"),
-        ("Prefiro abordagens revolucionárias e desafiadoras das normas tradicionais.", "Rebelde"),
-        ("Aprendo visando a liderança e a aplicação prática no comando de equipes.", "Governante"),
-        ("Busco desafios e situações que testem minha coragem e habilidades.", "Herói"),
-        ("Valorizo a honestidade e a simplicidade no processo de aprendizagem.", "Inocente"),
-        ("Estou sempre procurando métodos inovadores e tecnológicos.", "Mago"),
-        ("Prefiro uma abordagem consistente e confortável, sem muitas surpresas.", "Cara comum")
+        ("Quebre as regras.", "Rebelde"),
+        ("Tudo é possível.", "Mago"),
+        ("Nunca desista.", "Herói"),
+        ("Cuide dos outros como se fossem seus.", "Cuidador"),
+        ("Crie sua própria realidade.", "Criador"),
+        ("Liderança é destino.", "Governante"),
+        ("Viva com paixão.", "Amante"),
+        ("Ria e o mundo rirá com você.", "Bobo da corte"),
+        ("O valor está na simplicidade.", "Cara comum"),
+        ("Veja o mundo com olhos de criança.", "Inocente"),
+        ("Sempre em busca do novo.", "Explorador"),
+        ("Conhecimento é poder.", "Sábio")
     ]
     },
+    #12
     {
-    "question": "Quando enfrenta um problema difícil, você tende a:",
+    "question": "Qual é o seu maior medo?",
     "answers": [
-        ("Analisar todos os detalhes antes de tomar uma decisão.", "Sábio"),
-        ("Confiar no instinto e emoções para guiar suas ações.", "Amante"),
-        ("Procurar soluções práticas e testadas.", "Cara comum"),
-        ("Cuidar primeiro dos impactos emocionais nas pessoas envolvidas.", "Cuidador"),
-        ("Buscar uma abordagem totalmente nova e inovadora.", "Mago"),
-        ("Manter a calma e a positividade, independentemente das dificuldades.", "Inocente"),
-        ("Enfrentar o problema de frente, com coragem e determinação.", "Herói"),
-        ("Expressar suas ideias de forma criativa para encontrar soluções.", "Criador"),
-        ("Usar o humor para aliviar a tensão e encontrar uma saída divertida.", "Bobo da corte"),
-        ("Desafiar o status quo para provocar mudanças significativas.", "Rebelde"),
-        ("Explorar novos ângulos e possibilidades, mesmo que arriscados.", "Explorador"),
-        ("Liderar os esforços, organizando e direcionando as ações de todos.", "Governante")
+        ("Ser controlado ou perder minha liberdade de expressão.", "Rebelde"),
+        ("Que minhas ideias ou criações não tenham o impacto desejado ou sejam mal compreendidas.", "Mago"),
+        ("Falhar quando outros dependem de mim ou não ser capaz de proteger quem amo.", "Herói"),
+        ("Não ser capaz de cuidar dos outros ou ver pessoas que amo sofrerem.", "Cuidador"),
+        ("Perder minha criatividade ou não conseguir expressar meu verdadeiro eu.", "Criador"),
+        ("Perder o controle ou ser incapaz de influenciar positivamente meu entorno.", "Governante"),
+        ("A solidão ou o desamor; não conseguir manter relacionamentos significativos.", "Amante"),
+        ("Ser levado muito a sério ou perder meu senso de humor.", "Bobo da corte"),
+        ("A mudança drástica ou perder minha conexão com a comunidade.", "Cara comum"),
+        ("O mal ou a corrupção, tanto em mim quanto nos outros.", "Inocente"),
+        ("Ser preso em uma rotina ou não poder explorar novas experiências.", "Explorador"),
+        ("O desconhecimento ou a disseminação de informações falsas.", "Sábio")
     ]
     },
+    #13
     {
-    "question": "Em qual destes cenários você se vê mais realizado?",
+    "question": "Qual é a sua maior vontade?",
     "answers": [
-        ("Organizando um evento comunitário para promover a harmonia local.", "Cuidador"),
-        ("Liderando uma empresa ou projeto com visão e direção claras.", "Governante"),
-        ("Descobrindo uma nova cultura ou país em uma viagem solo.", "Explorador"),
-        ("Criando uma obra de arte ou um novo design revolucionário.", "Criador"),
-        ("Em um relacionamento amoroso profundo e significativo.", "Amante"),
-        ("Ensinar e compartilhar conhecimento em um ambiente acadêmico.", "Sábio"),
-        ("Trazendo alegria e risadas a uma reunião social ou encontro de amigos.", "Bobo da corte"),
-        ("Ajudando a liderar uma causa para reformar sistemas injustos.", "Rebelde"),
-        ("Superando um desafio físico ou esportivo difícil.", "Herói"),
-        ("Vivendo uma vida tranquila e contente, valorizando as pequenas coisas.", "Inocente"),
-        ("Introduzindo uma nova tecnologia ou método que muda as regras do jogo.", "Mago"),
-        ("Mantendo-se fiel às suas rotinas e confortos familiares.", "Cara comum")
-    ]
-    },
-    {
-    "question": "Qual frase melhor descreve sua visão sobre relacionamentos?",
-    "answers": [
-        ("Eles devem ser baseados em confiança mútua e respeito.", "Cara comum"),
-        ("Deve haver um espaço para crescer juntos e individualmente.", "Cuidador"),
-        ("Eles são fundamentais para revolucionar e inspirar mudanças sociais.", "Rebelde"),
-        ("São uma fonte de alegria, humor e diversão.", "Bobo da corte"),
-        ("O amor e a paixão são essenciais em todos os relacionamentos.", "Amante"),
-        ("Devem ser uma parceria igualitária com metas e objetivos compartilhados.", "Governante"),
-        ("Aprendizado e troca de conhecimentos são cruciais.", "Sábio"),
-        ("Deveriam nos desafiar a sermos melhores e mais corajosos.", "Herói"),
-        ("Precisam de criatividade e expressão artística compartilhada.", "Criador"),
-        ("Devem promover a inovação e a mudança.", "Mago"),
-        ("São uma jornada de autodescoberta e exploração.", "Explorador"),
-        ("Deve-se preservar a inocência e a pureza do começo.", "Inocente")
-    ]
-    },
-    {
-    "question": "Como você prefere celebrar seu aniversário?",
-    "answers": [
-        ("Uma grande festa com todos os seus amigos e muita diversão.", "Bobo da corte"),
-        ("Uma reunião íntima com pessoas próximas em um ambiente acolhedor.", "Cuidador"),
-        ("Uma viagem para um lugar novo e excitante.", "Explorador"),
-        ("Um jantar romântico com alguém especial.", "Amante"),
-        ("Um seminário ou workshop para aprender algo novo.", "Sábio"),
-        ("Planejando e executando um evento perfeito e luxuoso.", "Governante"),
-        ("Um projeto de arte ou criativo pessoal.", "Criador"),
-        ("Participando de uma causa beneficente ou atividade voluntária.", "Inocente"),
-        ("Um desafio ou atividade que teste seus limites físicos ou mentais.", "Herói"),
-        ("Um debate ou discussão sobre um tema que você é apaixonado.", "Rebelde"),
-        ("Experimentando uma nova tecnologia ou gadget.", "Mago"),
-        ("Um dia tranquilo em casa, desfrutando de seus hobbies e confortos.", "Cara comum")
-    ]
-    },
-    {
-    "question": "Quando pensa em seu legado, o que é mais importante para você?",
-    "answers": [
-        ("Que eu tenha feito as pessoas rirem e dado leveza às suas vidas.", "Bobo da corte"),
-        ("Que eu tenha cuidado bem daqueles ao meu redor e deixado um impacto positivo em suas vidas.", "Cuidador"),
-        ("Que eu tenha explorado e experimentado o máximo possível do mundo.", "Explorador"),
-        ("Que eu tenha sido verdadeiro e fiel aos meus sentimentos e aos dos outros.", "Amante"),
-        ("Que eu tenha compartilhado conhecimento e inspirado outros a aprender.", "Sábio"),
-        ("Que eu tenha liderado com força e eficácia, criando estabilidade e prosperidade.", "Governante"),
-        ("Que minhas obras ou criações tenham inspirado e influenciado outros.", "Criador"),
-        ("Que eu tenha vivido uma vida simples, pura e feliz, sem complicar desnecessariamente.", "Inocente"),
-        ("Que eu tenha defendido o que é certo e lutado contra as injustiças.", "Rebelde"),
-        ("Que eu tenha sido corajoso e enfrentado os desafios de frente.", "Herói"),
-        ("Que eu tenha introduzido inovações e transformado a maneira como as coisas são feitas.", "Mago"),
-        ("Que eu tenha proporcionado um ambiente estável e confiável para minha família.", "Cara comum")
-    ]
-    }, 
-    {
-    "question": "Qual tipo de filme você prefere assistir?",
-    "answers": [
-        ("Comédias que trazem humor e alegria.", "Bobo da corte"),
-        ("Dramas que exploram as complexidades dos relacionamentos humanos.", "Amante"),
-        ("Documentários educativos que expandem seu conhecimento.", "Sábio"),
-        ("Filmes de ação e aventura que te levam a lugares distantes e emocionantes.", "Explorador"),
-        ("Histórias inspiradoras sobre heróis que superam grandes desafios.", "Herói"),
-        ("Thrillers políticos ou filmes que desafiam o sistema e provocam pensamento.", "Rebelde"),
-        ("Filmes de ficção científica ou fantasia que apresentam novos mundos e ideias.", "Mago"),
-        ("Filmes românticos que celebram o amor e a paixão.", "Amante"),
-        ("Dramas familiares que enfocam o cuidado e a proteção dos entes queridos.", "Cuidador"),
-        ("Filmes que apresentam uma narrativa simples e reconfortante.", "Inocente"),
-        ("Obras de arte visual que são inovadoras e esteticamente belas.", "Criador"),
-        ("Filmes que retratam a vida cotidiana e as alegrias simples.", "Cara comum")
+        ("Mudar o mundo e romper com as convenções estabelecidas.", "Rebelde"),
+        ("Criar algo verdadeiramente único e transformador que inspire as pessoas.", "Mago"),
+        ("Ser reconhecido como alguém que faz a diferença e defende o bem.", "Herói"),
+        ("Ter a capacidade de cuidar de todos ao meu redor, garantindo seu conforto e felicidade.", "Cuidador"),
+        ("Expressar minha visão artística e ser aclamado por minhas criações.", "Criador"),
+        ("Liderar com sucesso e ser respeitado como uma autoridade justa e eficaz.", "Governante"),
+        ("Encontrar e cultivar um amor verdadeiro que dure uma vida inteira.", "Amante"),
+        ("Levar alegria e riso para tantas pessoas quanto possível.", "Bobo da corte"),
+        ("Viver uma vida plena e satisfatória com as pessoas que amo, sem complicações ou dramas.", "Cara comum"),
+        ("Manter a pureza e a alegria em todos os aspectos da minha vida.", "Inocente"),
+        ("Viajar pelo mundo e experimentar todas as culturas e lugares possíveis.", "Explorador"),
+        ("Adquirir e compartilhar conhecimento, tornando-me uma fonte de sabedoria para outros.", "Sábio")
     ]
     },
 ]

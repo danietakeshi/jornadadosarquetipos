@@ -144,10 +144,13 @@ if 'question_index' not in st.session_state:
     st.session_state['question_index'] = 0
 
 if 'responses' not in st.session_state:
-    st.session_state['responses'] = [None] * len(qt.questions)
+    st.session_state['responses'] = []
     
 if 'survey_started' not in st.session_state:
     st.session_state['survey_started'] = False
+    
+double_index = [0, 9, 10, 11]
+max_points = len(qt.questions) + len(double_index)
 
 # Helper function to display a question
 def display_question(question_index):
@@ -167,10 +170,12 @@ def display_question(question_index):
     # Handle the "Next" button without needing a form
     if st.button("Próxima", key=f"next_{question_index}"):
         if selected_answer:
+            weight = 2 if question_index in double_index else 1
+            
             # Save the selected category in the responses list
             for answer, category in answer_options:
                 if selected_answer == answer:
-                    st.session_state['responses'][question_index] = category
+                    st.session_state['responses'].append((category, weight))
                     break
 
             # Move to the next question
@@ -204,8 +209,12 @@ if not st.session_state['survey_started']:
 elif st.session_state['question_index'] < len(qt.questions):
     display_question(st.session_state['question_index'])
 else:
-    # All questions answered, display the result
-    category_count = Counter(filter(None, st.session_state['responses']))
+     # All questions answered, calculate the weighted results
+    category_count = Counter()
+    for category, weight in st.session_state['responses']:
+        category_count[category] += weight
+        
+    # Get the top 3 categories
     top_3_categories = category_count.most_common(3)
     
     st.image('img/Logo fundo escuro 2.png')
@@ -225,7 +234,7 @@ else:
         </style>
         """, unsafe_allow_html=True)
         
-        st.markdown(f'<p class="big-font">{idx}. {category} - {count / len(qt.questions):.0%}</p>', unsafe_allow_html=True)
+        st.markdown(f'<p class="big-font">{idx}. {category} - {count / max_points:.0%}</p>', unsafe_allow_html=True)
         
     col1, col2 = st.columns(2)
     # with col1:
