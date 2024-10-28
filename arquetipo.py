@@ -1,9 +1,9 @@
 import streamlit as st
 from collections import Counter
-from io import BytesIO
-from reportlab.lib.pagesizes import letter
-from reportlab.pdfgen import canvas
-from reportlab.lib.utils import ImageReader
+# from io import BytesIO
+# from reportlab.lib.pagesizes import letter
+# from reportlab.pdfgen import canvas
+# from reportlab.lib.utils import ImageReader
 import questions as qt
 
 st.markdown("""
@@ -120,24 +120,24 @@ questions = [
 ]
 
 # Function to generate the PDF
-def generate_pdf(top_3_categories):
-    buffer = BytesIO()
-    p = canvas.Canvas(buffer, pagesize=letter)
+# def generate_pdf(top_3_categories):
+#     buffer = BytesIO()
+#     p = canvas.Canvas(buffer, pagesize=letter)
     
-    logo_path = "img/Logo fundo branco 2.png"  # Replace with your logo image path
-    p.drawImage(ImageReader(logo_path), x=100, y=625, width=400, height=200)  # Adjust position and size as needed
+#     logo_path = "img/Logo fundo branco 2.png"  # Replace with your logo image path
+#     p.drawImage(ImageReader(logo_path), x=100, y=625, width=400, height=200)  # Adjust position and size as needed
     
-    p.drawString(100, 550, "Parabéns por completar a Jornada dos Arquétipos!")
-    p.drawString(100, 530, "")
-    p.drawString(100, 510, "Seus resultados revelaram os arquétipos que dominam sua personalidade e influenciam")
-    p.drawString(100, 490, "suas escolhas e estilo de vida.")
+#     p.drawString(100, 550, "Parabéns por completar a Jornada dos Arquétipos!")
+#     p.drawString(100, 530, "")
+#     p.drawString(100, 510, "Seus resultados revelaram os arquétipos que dominam sua personalidade e influenciam")
+#     p.drawString(100, 490, "suas escolhas e estilo de vida.")
     
-    for idx, (category, count) in enumerate(top_3_categories, start=1):
-        p.drawString(100, 480 - idx * 20, f"{idx}. {category} - {count / len(qt.questions):.0%}")
+#     for idx, (category, count) in enumerate(top_3_categories, start=1):
+#         p.drawString(100, 480 - idx * 20, f"{idx}. {category} - {count / len(qt.questions):.0%}")
     
-    p.save()
-    buffer.seek(0)
-    return buffer
+#     p.save()
+#     buffer.seek(0)
+#     return buffer
 
 # Initialize session state variables if not set
 if 'question_index' not in st.session_state:
@@ -228,15 +228,15 @@ else:
         st.markdown(f'<p class="big-font">{idx}. {category} - {count / len(qt.questions):.0%}</p>', unsafe_allow_html=True)
         
     col1, col2 = st.columns(2)
-    with col1:
-        # Option to download the PDF
-        pdf_buffer = generate_pdf(top_3_categories)
-        st.download_button(
-            label="Baixar resultado",
-            data=pdf_buffer,
-            file_name="survey_results.pdf",
-            mime="application/pdf"
-        )
+    # with col1:
+    #     # Option to download the PDF
+    #     pdf_buffer = generate_pdf(top_3_categories)
+    #     st.download_button(
+    #         label="Baixar resultado",
+    #         data=pdf_buffer,
+    #         file_name="survey_results.pdf",
+    #         mime="application/pdf"
+    #     )
         
     # VIDEO_URL = "https://youtu.be/lIGBBWrSOd8?si=v84scV_p9YjQSFTt"
     # st.video(VIDEO_URL)
@@ -250,7 +250,7 @@ else:
     #             """)
 
     # Option to restart the quiz
-    with col2:
+    with col1:
         if st.button("Fazer novamente"):
             st.session_state['question_index'] = 0
             st.session_state['responses'] = [None] * len(qt.questions)
