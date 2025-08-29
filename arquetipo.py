@@ -6,10 +6,18 @@ from collections import Counter
 # from reportlab.lib.utils import ImageReader
 import questions as qt
 
+st.set_page_config(
+    page_title="Mapa do Posicionamento",
+    page_icon="🗺️",
+    layout="centered",
+    initial_sidebar_state="auto"
+)
+
 st.markdown("""
 <style>
 body {
-    background-color: #3d3d3d;
+    background-color: #ffffff;
+    color: #222;
 }
 </style>
 """, unsafe_allow_html=True)
