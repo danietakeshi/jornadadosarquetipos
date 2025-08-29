@@ -257,16 +257,8 @@ else:
     st.markdown("""
             Você já deu o primeiro passo: entendeu quais arquétipos guiam sua essência.
 
-            O próximo é aprender a usar isso na prática para se destacar no digital. 🚀
-            Clique aqui e agende um diagnóstico gratuito, onde vou te mostrar como aplicar seus arquétipos no seu posicionamento de imagem e comunicação.
+            O próximo é aprender como aplicar seus arquétipos no seu posicionamento de imagem e comunicação.
                 """)
-    st.markdown("""
-        <a href="https://wa.link/mfh2p4" target="_blank">
-            <button style="background-color:#25D366;color:white;padding:12px 24px;border:none;border-radius:6px;font-size:18px;cursor:pointer;">
-                Agendar diagnóstico via WhatsApp
-            </button>
-        </a>
-        """, unsafe_allow_html=True)
         
     col1, col2 = st.columns(2)
     # with col1:
@@ -290,8 +282,17 @@ else:
 
     #             """)
 
-    # Option to restart the quiz
     with col1:
+        st.markdown("""
+        <a href="https://wa.link/mfh2p4" target="_blank">
+            <button style="background-color:#25D366;color:white;padding:12px 24px;border:none;border-radius:6px;font-size:18px;cursor:pointer;">
+                Descubra como!
+            </button>
+        </a>
+        """, unsafe_allow_html=True)
+        
+    # Option to restart the quiz
+    with col2:
         if st.button("Fazer novamente"):
             st.session_state['question_index'] = 0
             st.session_state['responses'] = [None] * len(qt.questions)
