@@ -233,21 +233,11 @@ else:
     top_3_categories = category_count.most_common(3)
     
     st.image('img/mapa_do_posicionamento.png')
-    st.header("Parabéns por completar a Jornada dos Arquétipos!")
+    st.header("Aqui está o seu Mapa do Posicionamento!")
     st.markdown("""
-            Você já deu o primeiro passo: entendeu quais arquétipos guiam sua essência.
             É bem importante você tirar um print deste resultado pois ele não ficará salvo.
-
-            O próximo é aprender a usar isso na prática para se destacar no digital. 🚀
-            Clique aqui e agende um diagnóstico gratuito, onde vou te mostrar como aplicar seus arquétipos no seu posicionamento de imagem e comunicação.
+            Com esses dados em mãos, você poderá alinhar sua imagem, comunicação e estratégias de marketing com os arquétipos que mais ressoam com você.
                 """)
-    st.markdown("""
-        <a href="https://wa.link/mfh2p4" target="_blank">
-            <button style="background-color:#25D366;color:white;padding:12px 24px;border:none;border-radius:6px;font-size:18px;cursor:pointer;">
-                Agendar diagnóstico via WhatsApp
-            </button>
-        </a>
-        """, unsafe_allow_html=True)
     
     for idx, (category, count) in enumerate(top_3_categories, start=1):
         # st.write(f"{idx}. {category} - {count / len(questions):.0%}")
@@ -263,6 +253,20 @@ else:
         st.markdown(f'<p class="big-font">{idx}. {category} - {count / max_points:.0%}</p>', unsafe_allow_html=True)
         st.markdown(archetype_descriptions[category])
         st.markdown("---")
+        
+    st.markdown("""
+            Você já deu o primeiro passo: entendeu quais arquétipos guiam sua essência.
+
+            O próximo é aprender a usar isso na prática para se destacar no digital. 🚀
+            Clique aqui e agende um diagnóstico gratuito, onde vou te mostrar como aplicar seus arquétipos no seu posicionamento de imagem e comunicação.
+                """)
+    st.markdown("""
+        <a href="https://wa.link/mfh2p4" target="_blank">
+            <button style="background-color:#25D366;color:white;padding:12px 24px;border:none;border-radius:6px;font-size:18px;cursor:pointer;">
+                Agendar diagnóstico via WhatsApp
+            </button>
+        </a>
+        """, unsafe_allow_html=True)
         
     col1, col2 = st.columns(2)
     # with col1:
