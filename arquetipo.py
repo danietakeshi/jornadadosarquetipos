@@ -20,6 +20,21 @@ body {
 # backgroundColor="#3d3d3d"
 # textColor="#e4efef"
 
+# Descrições dos arquétipos
+archetype_descriptions = {
+    "Herói": "🔥 Você é uma pessoa que tende a buscar superação e resultados. Tem coragem, determinação e não mede esforços para alcançar suas metas, inspirando os outros pela sua força e disciplina.",
+    "Mago": "🧙 Você é uma pessoa que tende a acreditar na transformação e no poder de criar novas realidades. Enxerga possibilidades onde outros veem limites e tem uma visão inovadora, capaz de gerar mudanças profundas.",
+    "Inocente": "🕊 Você é uma pessoa que tende a valorizar a simplicidade, a pureza e a fé. Vê o lado bom das situações e transmite esperança, otimismo e autenticidade.",
+    "Explorador": "🧭 Você é uma pessoa que tende a buscar liberdade e novas experiências. Gosta de sair da zona de conforto, valoriza a autenticidade e está sempre em movimento, em busca de descobertas.",
+    "Cuidador": "🤝 Você é uma pessoa que tende a colocar o bem-estar dos outros em primeiro lugar. Generosa, empática e atenta às necessidades alheias, sente prazer em apoiar, acolher e proteger.",
+    "Governante": "👑 Você é uma pessoa que tende a gostar de ordem, estrutura e liderança. Tem postura firme, visão estratégica e transmite segurança, inspirando confiança em quem está ao seu redor.",
+    "Criador": "🎨 Você é uma pessoa que tende a ter originalidade e imaginação fértil. Busca expressar suas ideias no mundo, valoriza a estética e gosta de transformar conceitos em algo único e criativo.",
+    "Amante": "💃 Você é uma pessoa que tende a valorizar conexões profundas, beleza e prazer. Vive com intensidade, entrega-se de coração e busca relacionamentos que tragam paixão e significado.",
+    "Bobo da Corte": "🤡 Você é uma pessoa que tende a enxergar leveza em tudo. Usa humor, espontaneidade e diversão para criar conexões e aliviar tensões, trazendo alegria para quem está à sua volta.",
+    "Cara Comum": "🙋 Você é uma pessoa que tende a valorizar igualdade e pertencimento. Gosta de simplicidade, autenticidade e acredita que todos têm valor, conectando-se com facilidade ao dia a dia das pessoas.",
+    "Rebelde": "🛡 Você é uma pessoa que tende a questionar regras e padrões. Tem coragem de romper com o estabelecido e busca transformar o que não faz sentido, trazendo inovação e autenticidade.",
+    "Sábio": "📚 Você é uma pessoa que tende a buscar conhecimento e clareza. Observadora, reflexiva e analítica, gosta de compreender profundamente as situações e compartilhar sabedoria com os outros."
+    }
 
 # Categories
 categories = [
@@ -158,7 +173,7 @@ def display_question(question_index):
     question_text = question_data["question"]
     answer_options = question_data["answers"]
 
-    st.image('img/Logo fundo escuro 2.png')
+    st.image('img/mapa_do_posicionamento.png')
     st.header(f"{question_text}")
     
     selected_answer = st.radio(
@@ -184,21 +199,21 @@ def display_question(question_index):
 
 # Display the introduction page if the survey hasn't started yet
 if not st.session_state['survey_started']:
-    st.image('img/Logo fundo escuro 2.png')
+    st.image('img/mapa_do_posicionamento.png')
     st.title("Seja bem-vinda!")
     st.markdown("""
         
-        Parabéns por dar o primeiro passo em direção ao autoconhecimento e desenvolvimento pessoal. Este teste é uma ferramenta projetada para ajudá-la a descobrir seus **três arquétipos dominantes**, que moldam sua personalidade e suas escolhas.
-        
-        **Instruções:**
-        
-        Responda às perguntas com calma e honestidade.
-        Não há respostas certas ou erradas, apenas aquelas que mais ressoam com quem você verdadeiramente é.
-        Tente não pensar muito tempo em cada questão, sua primeira impressão geralmente é a mais alinhada com seu instinto.
-        
-        Ao final deste teste, você terá uma visão mais clara dos arquétipos que estão mais ativamente presentes em sua vida. Isso não apenas aumentará sua compreensão de si mesmo, mas também fornecerá **insights valiosos sobre como você pode alinhar ainda mais suas ações e decisões com seus valores e objetivos autênticos.**
-        
-        Pronta para começar?
+        Parabéns por dar o primeiro passo em direção ao autoconhecimento e à sua verdadeira essência.
+        Este teste foi criado para ajudá-la a descobrir seus três arquétipos dominantes — forças internas que influenciam sua forma de se expressar, de tomar decisões e de se relacionar com o mundo.
+
+        📝 Como funciona?
+        - Responda às perguntas com calma e sinceridade.
+        - Não existe certo ou errado: escolha aquilo que mais ressoa com você.
+        - Confie na sua primeira impressão — ela costuma ser a voz mais fiel da sua intuição.
+
+        Ao final, você terá uma visão clara dos arquétipos que guiam sua jornada. Esse conhecimento vai iluminar não apenas quem você é, mas também como alinhar sua imagem, escolhas e posicionamento com seus valores mais autênticos.
+
+        Está pronta? Vamos começar essa jornada de descoberta juntas!
     """)
     
     if st.button("Começar"):
@@ -217,11 +232,22 @@ else:
     # Get the top 3 categories
     top_3_categories = category_count.most_common(3)
     
-    st.image('img/Logo fundo escuro 2.png')
+    st.image('img/mapa_do_posicionamento.png')
     st.header("Parabéns por completar a Jornada dos Arquétipos!")
     st.markdown("""
-            Seus resultados revelaram os arquétipos que dominam sua personalidade e influenciam suas escolhas e estilo de vida. 
+            Você já deu o primeiro passo: entendeu quais arquétipos guiam sua essência.
+            É bem importante você tirar um print deste resultado pois ele não ficará salvo.
+
+            O próximo é aprender a usar isso na prática para se destacar no digital. 🚀
+            Clique aqui e agende um diagnóstico gratuito, onde vou te mostrar como aplicar seus arquétipos no seu posicionamento de imagem e comunicação.
                 """)
+    st.markdown("""
+        <a href="https://wa.link/mfh2p4" target="_blank">
+            <button style="background-color:#25D366;color:white;padding:12px 24px;border:none;border-radius:6px;font-size:18px;cursor:pointer;">
+                Agendar diagnóstico via WhatsApp
+            </button>
+        </a>
+        """, unsafe_allow_html=True)
     
     for idx, (category, count) in enumerate(top_3_categories, start=1):
         # st.write(f"{idx}. {category} - {count / len(questions):.0%}")
@@ -235,6 +261,8 @@ else:
         """, unsafe_allow_html=True)
         
         st.markdown(f'<p class="big-font">{idx}. {category} - {count / max_points:.0%}</p>', unsafe_allow_html=True)
+        st.markdown(archetype_descriptions[category])
+        st.markdown("---")
         
     col1, col2 = st.columns(2)
     # with col1:
