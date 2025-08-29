@@ -156,9 +156,9 @@ questions = [
 
 def get_whatsapp_link(top_3_categories):
     # Monta a mensagem com os 3 arquétipos
-    msg = "Meus 3 arquétipos dominantes são:\n"
+    msg = "Olá, descobri os meus arquétipos dominantes e quero saber como posso usa-los para ter mais autenticidade no digital.\n"
     for idx, (category, count) in enumerate(top_3_categories, start=1):
-        msg += f"{idx}. {category}\n"
+        msg += f"{idx}. {category} ({count / max_points:.0%})\n"
     # Codifica a mensagem para URL
     import urllib.parse
     encoded_msg = urllib.parse.quote(msg)
