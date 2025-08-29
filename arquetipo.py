@@ -154,6 +154,17 @@ questions = [
 #     buffer.seek(0)
 #     return buffer
 
+def get_whatsapp_link(top_3_categories):
+    # Monta a mensagem com os 3 arquétipos
+    msg = "Meus 3 arquétipos dominantes são:\n"
+    for idx, (category, count) in enumerate(top_3_categories, start=1):
+        msg += f"{idx}. {category}\n"
+    # Codifica a mensagem para URL
+    import urllib.parse
+    encoded_msg = urllib.parse.quote(msg)
+    # Retorna o link do WhatsApp com a mensagem preenchida
+    return f"https://wa.me/5511988418211?text={encoded_msg}"  # Troque pelo número desejado
+
 # Initialize session state variables if not set
 if 'question_index' not in st.session_state:
     st.session_state['question_index'] = 0
@@ -283,8 +294,9 @@ else:
     #             """)
 
     with col1:
-        st.markdown("""
-        <a href="https://wa.link/mfh2p4" target="_blank">
+        wa_link = get_whatsapp_link(top_3_categories)
+        st.markdown(f"""
+        <a href="{wa_link}" target="_blank">
             <button style="background-color:#25D366;color:white;padding:12px 24px;border:none;border-radius:6px;font-size:18px;cursor:pointer;">
                 Descubra como!
             </button>
